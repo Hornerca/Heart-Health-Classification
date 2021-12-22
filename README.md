@@ -6,8 +6,8 @@ Database: https://ieee-dataport.org/open-access/heart-disease-dataset-comprehens
 
 - Each model's hyper-parameters tuned using grid search
 - 10-fold corss validation repleated 10 times was performed on each model 
-- Model selection based on averaged accuracy
-- ROC Curve Presented
+- Model selection based on cross validated accuracy
+- ROC Curve of Selected Model
 - Permutation Importance of Each Feature
 
 ## Classifiers Accuracies- 10 fold cross validation, repeated 5 times
@@ -21,7 +21,7 @@ Accuracy | Classifier
 0.8498 | SVM
 
 
-## Selected Classifier: Extra Tree 
+## Selected Classifier Summary on Testing Set: Extra Tree 
 info | precision   | recall | f1-score  | support
 ------- | ----------- |-------------- | ---------- | ----------
 Healthy (0)   |    0.89  |    0.75   |   0.82   |    112
@@ -31,7 +31,7 @@ macro avg    |   0.85    |  0.84   |   0.84    |   238
 weighted avg    |   0.85    |  0.84   |   0.84   |    238
 
 
-## ROC Curve
+## ROC Curve for Extra Tree
 An ROC curve (receiver operating characteristic curve) is a graph showing the performance of a classification model at all classification thresholds. 
 This curve plots two parameters:
 - True Positive Rate
