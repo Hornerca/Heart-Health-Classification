@@ -40,6 +40,6 @@ This curve plots two parameters:
 ![Alt Text](https://github.com/Hornerca/Heart-Health-Classification/blob/main/ROC.png)
 
 ## Non-parametric Feature Importance
-This data suggests there are 6 main feature that are different between classes. Less features prevent overfitting and minimize computation costs. Feature importance exploration also alows for meaningfull insight into the data. 
+This data suggests there are 6 main feature that are different between classes, with exercise angina being best. Less features prevent overfitting and minimize computation costs. Feature importance exploration also alows for meaningfull insight into the data. 
 
 ![Alt Text](https://github.com/Hornerca/Heart-Health-Classification/blob/main/Permutation%20Feature%20Importance.png)
