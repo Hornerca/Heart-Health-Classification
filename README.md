@@ -1,11 +1,11 @@
-# Heart Heath Classification- Model Selection, Visulization in Sklearn (RandomForrests, Bagging, SVM, ExtraTree, kNN)
+# Heart Heath Classification- Model Selection, Visualization in Sklearn (RandomForrests, Bagging, SVM, ExtraTree, kNN)
 
-According to the Canadian Chronic Disease Surveillance System, 1 in 12 individuals over 20 years old are living with a heart disease in 2012-2013. Using data science, this repository explores model selection based on cross validated accuracy, data visulization and feature importance.
+According to the Canadian Chronic Disease Surveillance System, 1 in 12 individuals over 20 years old are living with a heart disease in 2012-2013. Using data science, this repository explores model selection based on cross validated accuracy, data visualization and feature importance.
 
 Database: https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive#files
 
 - Each model's hyper-parameters tuned using grid search
-- 10-fold corss validation repleated 10 times was performed on each model 
+- 10-fold cross validation repeated 10 times was performed on each model 
 - Model selection based on cross validated accuracy
 - ROC Curve of Selected Model
 - Permutation Importance of Each Feature
@@ -40,6 +40,6 @@ This curve plots two parameters:
 ![Alt Text](https://github.com/Hornerca/Heart-Health-Classification/blob/main/ROC.png)
 
 ## Non-parametric Feature Importance
-This data suggests there are 6 main feature that are different between classes, with exercise angina being best. Less features prevent overfitting and minimize computation costs. Feature importance exploration also alows for meaningfull insight into the data. 
+This data suggests there are 6 main feature that are different between classes, with exercise angina being best. Less features prevent overfitting and minimize computation costs. Feature importance provides meaningful insight into the data. 
 
 ![Alt Text](https://github.com/Hornerca/Heart-Health-Classification/blob/main/Permutation%20Feature%20Importance.png)
