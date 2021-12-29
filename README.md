@@ -1,4 +1,4 @@
-# Heart Heath Classification- Model Selection, Visualization in Sklearn (RandomForrests, Bagging, SVM, ExtraTree, kNN)
+# Heart Heath Classification- Model Selection, Feature Importance, Visualization in Sklearn (RandomForrests, Bagging, SVM, ExtraTree, kNN)
 
 According to the Canadian Chronic Disease Surveillance System, 1 in 12 individuals over 20 years old are living with a heart disease in 2012-2013. Using data science, this repository explores model selection based on cross validated accuracy, data visualization and feature importance.
 
