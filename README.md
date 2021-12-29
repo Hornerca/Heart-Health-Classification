@@ -34,8 +34,8 @@ weighted avg    |   0.85    |  0.84   |   0.84   |    238
 ## ROC Curve for Extra Tree
 An ROC curve (receiver operating characteristic curve) is a graph showing the performance of a classification model at all classification thresholds. 
 This curve plots two parameters:
-- True Positive Rate
-- False Positive Rate
+- True Positive Rate (Correct classification of Heart Disease diagnosis)
+- False Positive Rate ( Incorrect classification of Heart Disease diagnosis)
 
 ![Alt Text](https://github.com/Hornerca/Heart-Health-Classification/blob/main/ROC.png)
 
