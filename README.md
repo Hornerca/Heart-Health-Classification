@@ -7,28 +7,39 @@ Database: https://ieee-dataport.org/open-access/heart-disease-dataset-comprehens
 - Each model's hyper-parameters tuned using grid search
 - 10-fold cross validation repeated 10 times was performed on each model 
 - Model selection based on cross validated accuracy
+- Statistical test between classifier's cross validated accuracies
 - ROC Curve of Selected Model
-- Permutation Importance of Each Feature
+- Permutation importance of each feature
 
 ## Classifiers Accuracies- 10 fold cross validation, repeated 5 times
 
-Accuracy | Classifier
------------- | -------------
-0.9172 | ExtraTree
-0.9168 | RandomForests
-0.8872 | Bagging
-0.8502 | kNN
-0.8498 | SVM
+Accuracy | STD | Classifier
+------------ | -------------| ---
+0.9658| 0.0155| ExtraTree
+0.9551| 0.0207| RandomForests
+0.9394| 0.0235| Bagging
+0.9092| 0.0248| SVM
+0.8979| 0.0315| kNN
+
+![Alt Text](https://github.com/Hornerca/Heart-Health-Classification/blob/main/Accuracy%20Box%20Plots.png)
+
+Figure: Boxplot of cross validated accuracies, all above chance level. 
+
+- The below figure illustrates that there is no significant difference between the classifier with the highest accuracy (ExtraTree) and RandomForests. All other classifiers show significant difference between classifiers.  
+
+![Alt Text](https://github.com/Hornerca/Heart-Health-Classification/blob/main/Dunn_Pairwise_Classifier_Comparison.png)
+
+Figure: Dunn Pairwise comparison of 4 classifiers using Bonferroni adjustment. P-values outlined in legend with NS representing no significance. 
 
 
 ## Selected Classifier Summary on Testing Set: Extra Tree 
 info | precision   | recall | f1-score  | support
 ------- | ----------- |-------------- | ---------- | ----------
-Healthy (0)   |    0.89  |    0.75   |   0.82   |    112
-Heart Disease (1)   |    0.81   |   0.92    |  0.86   |    126
-accuracy   |           |            | 0.84    |   238
-macro avg    |   0.85    |  0.84   |   0.84    |   238
-weighted avg    |   0.85    |  0.84   |   0.84   |    238
+Healthy (0)     |    0.93    |    0.79    |    0.85    |     114
+Heart Disease (1)    |     0.81   |     0.94    |    0.87    |     111
+accuracy         |              |         | 0.86     |    225
+macro avg       |  0.87      |  0.86     |   0.86      |   225
+weighted avg      |   0.87     |   0.86    |    0.86     |    225
 
 
 ## ROC Curve for Extra Tree
