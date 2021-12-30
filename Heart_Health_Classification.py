@@ -135,14 +135,14 @@ df_scores=pd.DataFrame(scores, index=keys)
 bplot=df_scores.T.boxplot(grid=False, rot=0)
 bplot.set_ylabel('Accuracy')
 bplot.set_title('10-fold Cross Validation Accuracy')
-bplot.figure.savefig('Permutation Feature Importance.png')
+bplot.figure.savefig('Accuracy Box Plots.png')
 
 
 
 print('Classifiers- 10 fold cross validation- repeat 5x')
 for i in results:
     i=list(i)
-    print(np.round(i[0],4), i[1])
+    print(np.round(i[0],4),np.round(i[2],4), i[1])
      
 print(' ')
 
@@ -211,6 +211,7 @@ ax.boxplot(
 )
 ax.set_title("Permutation Importance of each feature")
 ax.set_ylabel("Features")
+ax.set_xlabel("Feature Importance")
 fig.tight_layout()
 plt.show()
 plt.savefig('Permutation Feature Importance.png')
