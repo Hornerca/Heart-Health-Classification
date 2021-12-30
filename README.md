@@ -26,10 +26,11 @@ Accuracy | STD | Classifier
 Figure: Boxplot of cross validated accuracies, all above chance level. 
 
 - The below figure illustrates that there is no significant difference between the classifier with the highest accuracy (ExtraTree) and RandomForests. All other classifiers show significant difference between classifiers.  
+- Shapiro-Wilk test for normality did not pass, non parametric test was used.
 
 ![Alt Text](https://github.com/Hornerca/Heart-Health-Classification/blob/main/Dunn_Pairwise_Classifier_Comparison.png)
 
-Figure: Dunn Pairwise comparison of 4 classifiers using Bonferroni adjustment. P-values outlined in legend with NS representing no significance. 
+Figure: Dunn Pairwise comparison of 4 classifiers using Bonferroni adjustment (non-parametric test). P-values outlined in legend with NS representing no significance. 
 
 
 ## Selected Classifier Summary on Testing Set: Extra Tree 
